@@ -8,6 +8,17 @@ group = 'com.process'
 version = '0.0.1-SNAPSHOT'
 description = 'clash'
 
+jar {
+    manifest {
+        attributes(
+                'Implementation-Title': 'Process Clash Server',
+                'Implementation-Version': archiveVersion,
+                'Implementation-Vendor': 'PROCESS',
+                'Bundle-License': 'AGPL-3.0-with-Commons-Clause'
+        )
+    }
+}
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
